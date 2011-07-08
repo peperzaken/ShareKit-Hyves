@@ -39,11 +39,11 @@ MMMMMMMMMMMMMMMN8OZ$$$$$$$$$$$$$$$$$$$$$ZO8DMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMM8OOOZ$$$$$$$$ZOO88MMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMO=======~?MMMMMMMMMMMMMMMMMMMMMMMMM
 
-INTRODUCTION
+**INTRODUCTION**
 
 This service uses the Hyves Data-API. To get started on working with the Data-API, you need to follow a couple of simple steps. For more information see the getting started section in Hyves' Data-API documentation: http://www.hyves-developers.nl/documentation/data-api/getting-started. Note: this service currently only uses the tips.create method in the Hyves Data-API to share items (http://www.hyves-developers.nl/documentation/data-api/methods/1.2/tips.create).
 
-GETTING STARTED
+**GETTING STARTED**
 
 1. Place the ShareKit folder in your project.
 2. Add the following frameworks if they are not already included:
@@ -55,16 +55,20 @@ GETTING STARTED
 3. Register your application at Hyves (steps are described at http://www.hyves-developers.nl/documentation/data-api/getting-started)
 4. Add your Hyves consumer- and secret-key to SHKConfig.h like below:
 
+```
 	#define SHKHyvesConsumerKey			@"CONSUMER_KEY_HERE"
 	#define SHKHyvesSecretKey			@"SECRET_KEY_HERE"
+```
 
 5. You are done. To actually share an item:
 
+```
 	// Create a shareable ShareKit item
-	SHKItem* item = [SHKItem text:@"Hyves service example test in ShareKit by Peperzaken. http://peperzaken.nl/over-peperzaken"];
+	SHKItem* item = [SHKItem text:@"Hyves service example test in ShareKit by Peperzaken http://peperzaken.nl/over-peperzaken."];
 
 	// Share the item through the SHKHyves service
 	[SHKHyves shareItem:item];
+```
 
 6. For additional documentation, check ShareKit's full documentation: http://getsharekit.com/docs/.
 7. Have fun. :-)
