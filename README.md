@@ -9,9 +9,9 @@ This service uses the Hyves Data-API. To get started on working with the Data-AP
 1. Place the ShareKit folder in your project.
 2. Add the following frameworks if they are not already included:
 
-	MessageUI
-	Security
-	SystemConfiguration
+	* MessageUI
+	* Security
+	* SystemConfiguration
 
 3. Register your application at Hyves (steps are described at http://www.hyves-developers.nl/documentation/data-api/getting-started)
 4. Add your Hyves consumer- and secret-key to SHKConfig.h like below:
